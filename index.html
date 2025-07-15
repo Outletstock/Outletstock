@@ -16,9 +16,7 @@
       </div>
       <h1>Outlet Stock</h1>
       <p>Más de 25 años comprando mercancía con profesionalismo y confianza.</p>
-      <a href="https://mail.google.com/mail/?view=cm&to=compras@outletstock.com&su=Consulta" 
-         target="_blank" 
-         class="btn">Contáctanos</a>
+      <a href="#" onclick="openEmail(); return false;" class="btn">Contáctanos</a>
     </div>
   </header>
 
@@ -38,67 +36,46 @@
     <div class="container">
       <h2>¿Qué Compramos?</h2>
       <div class="galeria-servicios">
-        <!-- Calzado Casual Hombre -->
         <div class="item-servicio">
           <img src="img/casual-hombre.jpg" alt="Calzado Casual Hombre">
           <h3>Calzado Casual Hombre</h3>
         </div>
-        
-        <!-- Calzado Casual Mujer -->
         <div class="item-servicio">
           <img src="img/casual-mujer.jpg" alt="Calzado Casual Mujer">
           <h3>Calzado Casual Mujer</h3>
         </div>
-        
-        <!-- Ropa -->
         <div class="item-servicio">
           <img src="img/servicio-textil.jpg" alt="Ropa">
           <h3>Ropa</h3>
         </div>
-        
-        <!-- Electrodomésticos -->
         <div class="item-servicio">
           <img src="img/electrodomesticos.jpg" alt="Electrodomésticos">
           <h3>Electrodomésticos</h3>
         </div>
-        
-        <!-- Muebles -->
         <div class="item-servicio">
           <img src="img/muebles.jpg" alt="Muebles">
           <h3>Muebles</h3>
         </div>
-        
-        <!-- Colchones -->
         <div class="item-servicio">
           <img src="img/colchones.jpg" alt="Colchones">
           <h3>Colchones</h3>
         </div>
-        
-        <!-- Deportes -->
         <div class="item-servicio">
           <img src="img/deportes.jpg" alt="Deportes">
           <h3>Deportes</h3>
         </div>
-        
-        <!-- Menaje de Hogar -->
         <div class="item-servicio">
           <img src="img/menaje-hogar.jpg" alt="Menaje de Hogar">
           <h3>Menaje de Hogar</h3>
         </div>
-        
-        <!-- Menaje de Cocina -->
         <div class="item-servicio">
           <img src="img/menaje-cocina.jpg" alt="Menaje de Cocina">
           <h3>Menaje de Cocina</h3>
         </div>
-        
-        <!-- Higiene Personal -->
         <div class="item-servicio">
           <img src="img/higiene.jpg" alt="Higiene Personal">
           <h3>Higiene Personal</h3>
         </div>
-        
-        <!-- Herramientas -->
         <div class="item-servicio">
           <img src="img/herramientas.jpg" alt="Herramientas">
           <h3>Herramientas</h3>
@@ -147,17 +124,15 @@
     <div class="container">
       <h2>¿Tienes stock para vender?</h2>
       <p>Contáctanos hoy y descubre cómo podemos ayudarte.</p>
-      
+
       <div class="contact-info">
         <a href="mailto:compras@outletstock.com"><i class="fas fa-envelope"></i> compras@outletstock.com</a>
         <a href="mailto:comprasoutlet.stock@gmail.com"><i class="fas fa-envelope"></i> comprasoutlet.stock@gmail.com</a>
         <a href="tel:+34942939609"><i class="fas fa-phone"></i> Oficina: 942 93 96 09</a>
         <a href="https://wa.me/34628241616" target="_blank"><i class="fab fa-whatsapp"></i> Móvil/WhatsApp: 628 241 616</a>
       </div>
-      
-      <a href="https://mail.google.com/mail/?view=cm&to=compras@outletstock.com&su=Consulta" 
-         target="_blank" 
-         class="btn">Escríbenos</a>
+
+      <a href="#" onclick="openEmail(); return false;" class="btn">Escríbenos</a>
     </div>
   </section>
 
@@ -173,5 +148,17 @@
       </div>
     </div>
   </footer>
+
+  <!-- Script de detección -->
+  <script>
+    function openEmail() {
+      const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      if (isMobile) {
+        window.location.href = "mailto:compras@outletstock.com?subject=Consulta";
+      } else {
+        window.open("https://mail.google.com/mail/?view=cm&to=compras@outletstock.com&su=Consulta", "_blank");
+      }
+    }
+  </script>
 </body>
 </html>
